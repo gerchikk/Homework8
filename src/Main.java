@@ -109,18 +109,10 @@ public class Main {
         weights1[0] = 1;
         weights1[1] = 2;
         weights1[2] = 3;
-        for (int i = 0; i < weights1.length; i++) {
-            if (weights1[i] % 2 != 0 && i != weights1.length - 1) {
-                weights1[i] = weights1 [i] + 1;
-                System.out.print(weights1[i] + ", ");
-            } if (weights1[i] % 2 == 0) {
-                System.out.print(weights1[i] + ", ");
-            } if (i == weights1.length - 1) {
-                weights1[i] = weights1 [i] + 1;
-                System.out.print(weights1[i]);
-            }
-
+        for (int i = 0; i < weights1.length; i++ ) {
+            if (weights1[i] % 2 != 0) weights1[i]++;
         }
+        System.out.println(Arrays.toString(weights1));
     }
 }
 
